@@ -1,0 +1,6 @@
+rootProject.name = 'MPmain'
+ 
+include   ':MPF', ':MP', ':MPtests'
+project(':MPF').projectDir = new File(settingsDir, '../MPF')
+project(':MP').projectDir = new File(settingsDir, '../MP')
+project(':MPtests').projectDir = new File(settingsDir, '../MPtests')

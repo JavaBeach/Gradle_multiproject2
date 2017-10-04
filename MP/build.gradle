@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'eclipse'
+ 
+repositories {
+   jcenter()
+}
+
+dependencies {    
+   compile project(':MPF')
+}
+
+mainClassName = 'mypackage.StartApp'
+
+/*
+jar {
+    manifest {
+        attributes 'Main-Class': 'mypackage.StartApp'
+    }
+}
+*/
